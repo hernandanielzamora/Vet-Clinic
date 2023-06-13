@@ -7,7 +7,11 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -35,6 +39,15 @@ Management system for animals clinic. Using SQL (PostgreSQL) to manage the data.
   </ul>
 </details>
 
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+
+- **[User can observe and analyze data]**
+- **[Can modify the table]**
+- **[Using PostgreSQL]**
+
 <!-- Getting Started -->
 
 ## Getting Started
@@ -44,6 +57,30 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+
+### Setup
+
+Clone this repository to your desired folder: 
+
+  1 - Go to the <> Code section in the repository. <br></br>
+  2 - Select the https tab and copy the url provided. <br></br>
+  3 - Use the git clone command in the root of the folder where you will save the project.<br></br>
+
+Note: For more information you can visit <a href="https://docs.github.com/es/get-started/getting-started-with-git/about-remote-repositories" target="_blank">About remote Repositories</a> and <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop" target="_blank">Adding and cloning repositories</a>.
+
+### Prerequisites
+
+In order to run this project you need:
+- Visual Studio Code
+- PostgreSQL
+- PSQL
+- SQLTools
+
+### Usage
+
+To make use of the project, you must create or have a vet_clinic database with a table.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="readme-top"></a>
 
@@ -55,6 +92,33 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@HernanZamora14](https://twitter.com/HernanZamora14)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/hernan-zamora-03a697236/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **[Enable the user to enter data]**
+- [ ] **[Building Front-End]**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [N/A]
+
+<!-- Project Presntation -->
+
+## :movie_camera: Project Presentation <a name="project-presentation"></a>
+
+- [N/A]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- CONTRIBUTING -->
 
