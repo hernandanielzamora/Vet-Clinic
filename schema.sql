@@ -20,6 +20,41 @@ CREATE TABLE species (
     name VARCHAR(100) NOT NULL,
 )
 
+CREATE TABLE vets (
+    id INT PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    date_of_graduation DATE
+);
+
+CREATE TABLE specializations (
+    vet_id INT,
+    species_id INT,
+    PRIMARY KEY (vet_id, species_id),
+    CONSTRAINT fk_vets
+     FOREIGN KEY (vet_id) REFERENCES vets(id)
+     ON DELETE CASCADE,
+    CONSTRAINT fk_species
+     FOREIGN KEY (species_id) REFERENCES species(id)
+     ON DELETE CASCADE
+);
+
+SELECT * FROM specializations;
+
+CREATE TABLE visits (
+    id INT PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY,
+    animal_id INT,
+    vet_id INT,
+    date_of_visit DATE,
+    CONSTRAINT fk_vets
+     FOREIGN KEY (vet_id) REFERENCES vets(id)
+     ON DELETE CASCADE,
+    CONSTRAINT fk_animals
+     FOREIGN KEY (animal_id) REFERENCES animals(id)
+     ON DELETE CASCADE
+);
+
+SELECT * FROM visits;
 
 /* Delte species Column */
 
