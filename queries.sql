@@ -87,7 +87,7 @@ SELECT animals.name, species.name FROM animals
 JOIN species ON animals.species_id = species.id 
 JOIN visits ON visits.animal_id=animals.id
 JOIN vets ON vets.id = visits.vet_id
-WHERE vets.name = 'Stephanie Mendez'
+WHERE vets.name = 'Stephanie Mendez';
 
 /* List all vets and their specialties, including vets with no specialties. */
 
