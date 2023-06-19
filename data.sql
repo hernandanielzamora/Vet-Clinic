@@ -111,3 +111,12 @@ insert into owners (full_name, email) select 'Owner ' || generate_series(1,25000
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits WHERE animal_id=4;
 CREATE INDEX visits_animal_id ON visits(animal_id);
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+CREATE INDEX visits_vet_id ON visits(vet_id);
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+CREATE INDEX owners_email ON owners(email);
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
