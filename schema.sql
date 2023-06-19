@@ -68,4 +68,16 @@ ADD owner_id INT,
 ADD CONSTRAINT fk_species FOREIGN KEY (species_id) REFERENCES species(id) ON DELETE CASCADE,
 ADD CONSTRAINT fk_owner FOREIGN KEY (owner_id) REFERENCES owners(id) ON DELETE CASCADE;
 
+/* Add new column (email) to owners table */
 
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+/* Created new visits table to populate with new data */
+
+CREATE TABLE visits(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  animal_id INT REFERENCES animals(id),
+  vet_id INT REFERENCES vets(id),
+  date_of_visit DATE,
+  PRIMARY KEY(id)
+);
