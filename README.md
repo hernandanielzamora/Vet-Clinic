@@ -91,6 +91,12 @@ To make use of the project, you must create or have a vet_clinic database with a
 - GitHub: [@hernandanielzamora](https://github.com/hernandanielzamora)
 - Twitter: [@HernanZamora14](https://twitter.com/HernanZamora14)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/hernan-zamora-03a697236/)
+
+## 👥 Author: <a name="authors">Nshanji Hilary Ndzi</a>
+
+- GitHub: [@dazehinn](https://github.com/dazehinn)
+- Twitter: [@hilaryndzi](https://twitter.com/hilaryndzi)
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/nshanji-hilary-ndzi/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
